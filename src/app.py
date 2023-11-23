@@ -84,7 +84,7 @@ def handle_planets():
 
 #single planets
 @app.route('/planets/<int:planet_id>', methods=['GET'])
-def handle_singleplanets(id):
+def handle_singleplanets(planet_id):
     planets_id = Planets.query.all(id)
 
     if plantes_id: 
